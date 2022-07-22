@@ -62,9 +62,19 @@ sudo apt install -y feh
 # Install i3
 sudo apt install -y i3
 
-# Install Display Manager Lightdm 
-sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
-sudo systemctl enable lightdm
-
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
+
+# Install Ly Console Display Manager
+cd 
+cd Downloads
+git clone --recurse-submodules https://github.com/nullgemm/ly.git
+cd ly/
+make
+sudo make install
+sudo systemctl enable ly
+
+# Install Display Manager Lightdm 
+# sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+# sudo systemctl enable lightdm
+
