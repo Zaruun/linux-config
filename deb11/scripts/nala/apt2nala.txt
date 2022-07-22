@@ -1,5 +1,9 @@
-Convert APT to Nala
-Add the following to your ~/.bashrc AND /root/.bashrc file:
+# Convert APT to Nala
+
+# only /root/.bashrc 
+alias sudo='sudo ' 
+
+# Add the following to your ~/.bashrc AND /root/.bashrc file:
 
 apt() { 
   command nala "$@"
