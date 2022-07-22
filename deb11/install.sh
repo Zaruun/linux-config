@@ -51,7 +51,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 
 sudo apt update
 
-sudo apt install brave-browser
+sudo apt install -y brave-browser
 
 # Desktop background browser/handler 
 # feh --bg-fill /path/to/directory 
@@ -60,7 +60,7 @@ sudo apt install brave-browser
 sudo apt install -y feh
 
 # Install i3
-sudo apt install i3
+sudo apt install -y i3
 
 # Install Display Manager Lightdm 
 sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
