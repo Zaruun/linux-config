@@ -3,8 +3,14 @@
 # Update
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
+sudo apt install -y python3-pip 
+
 # sudo apt install i3 xorg lightdm slick-greeter lightdm-settings lxappearance nitrogen pcmanfm chromium pulseaudio alsa-utils pavucontrol terminator -y 
+
 sudo apt install i3 xorg lxappearance nitrogen pcmanfm chromium pulseaudio alsa-utils pavucontrol terminator -y 
+
+sudo apt install build-essential libpam0g-dev libxcb-xkb-dev -y
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
